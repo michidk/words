@@ -33,7 +33,7 @@ export const getContrastColor = (bgColor: string): string => {
 	return luminance > 0.5 ? "black" : "white";
 };
 
-export const getRandomItem = <T,>(items: T[], seed: string): T => {
+export const getRandomItem = <T>(items: T[], seed: string): T => {
 	const index = Math.floor(seededRandom(seed) * items.length);
 	return items[index];
 };

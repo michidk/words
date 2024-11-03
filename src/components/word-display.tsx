@@ -1,11 +1,16 @@
 "use client";
 
+import {
+	generateGradientColors,
+	getContrastColor,
+	getRandomItem,
+	seededRandom,
+} from "@/lib/utils";
 import { RefreshCw } from "lucide-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { getRandomWord } from "./actions";
 import fonts from "./font-list";
-import { generateGradientColors, getContrastColor, getRandomItem, seededRandom } from "@/lib/utils";
 
 interface WordState {
 	word: string;
